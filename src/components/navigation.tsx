@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,22 +15,22 @@ export function Navigation() {
   ];
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <nav className="fixed w-full top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 font-bold text-xl">
-            <span className="text-slate-900 dark:text-white tracking-tight">Nouman A Khan</span>
+            <span className="text-white tracking-tight">Nouman A Khan</span>
           </Link>
 
-          {/* Right Section containing Links, Button and ThemeToggle */}
+          {/* Right Section containing Links and Button */}
           <div className="hidden md:flex items-center space-x-6">
             <div className="flex items-center space-x-1">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  className="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-blue-400 transition-colors"
                 >
                   {item.label}
                 </Link>
@@ -45,14 +44,12 @@ export function Navigation() {
               Book a Call
             </Link>
 
-
           </div>
 
           {/* Mobile Menu Button */}
           <div className="flex items-center space-x-4 md:hidden">
-
             <button
-              className="p-2 text-slate-600 dark:text-slate-300"
+              className="p-2 text-slate-300"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? (
@@ -71,7 +68,7 @@ export function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                className="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}

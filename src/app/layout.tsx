@@ -35,9 +35,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth dark`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-300 min-h-screen flex flex-col">
+      <body className="bg-slate-950 text-slate-50 min-h-screen flex flex-col">
           <Navigation />
           <main className="flex-1 pt-16">{children}</main>
           <Footer />

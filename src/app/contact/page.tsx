@@ -48,7 +48,7 @@ export default function Contact() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-24 bg-gradient-to-b from-blue-50 to-transparent dark:from-slate-900/50 dark:to-transparent">
+      <section className="py-24 bg-gradient-to-b from-slate-900/50 to-transparent">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -56,16 +56,16 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
             className="max-w-2xl"
           >
-            <span className="inline-block text-sm font-semibold uppercase tracking-widest text-blue-600 dark:text-blue-400 mb-4">
+            <span className="inline-block text-sm font-semibold uppercase tracking-widest text-blue-400 mb-4">
               Contact
             </span>
             <h1 className="text-5xl font-bold mb-6 leading-tight">
               Let's Build Something{" "}
-              <span className="text-blue-600 dark:text-purple-400">
+              <span className="text-purple-400">
                 Great Together
               </span>
             </h1>
-            <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+            <p className="text-lg text-slate-400 leading-relaxed">
               Whether you have a project in mind, a question, or just want to
               connect — my inbox is always open. I typically respond within 24
               hours.
@@ -87,7 +87,7 @@ export default function Contact() {
               viewport={{ once: true }}
             >
               <h2 className="text-2xl font-bold mb-2">Get in Touch</h2>
-              <p className="text-slate-500 dark:text-slate-400 mb-10">
+              <p className="text-slate-400 mb-10">
                 Reach out through any of the channels below.
               </p>
 
@@ -102,31 +102,31 @@ export default function Contact() {
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4, delay: i * 0.1 }}
                       viewport={{ once: true }}
-                      className="group flex items-center gap-5 p-5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-purple-500 hover:shadow-lg transition-all duration-300"
+                      className="group flex items-center gap-5 p-5 rounded-xl bg-slate-800 border border-slate-700 hover:border-purple-500 hover:shadow-lg transition-all duration-300"
                     >
-                      <div className="shrink-0 w-12 h-12 rounded-lg bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center group-hover:bg-blue-100 dark:group-hover:bg-blue-900/50 transition-colors">
-                        <Icon className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                      <div className="shrink-0 w-12 h-12 rounded-lg bg-blue-900/30 flex items-center justify-center group-hover:bg-blue-900/50 transition-colors">
+                        <Icon className="w-5 h-5 text-blue-400" />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-0.5">
+                        <p className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-0.5">
                           {item.label}
                         </p>
-                        <p className="font-semibold text-slate-900 dark:text-slate-100 truncate">
+                        <p className="font-semibold text-slate-100 truncate">
                           {item.value}
                         </p>
-                        <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                        <p className="text-xs text-slate-400 mt-0.5">
                           {item.description}
                         </p>
                       </div>
-                      <ArrowUpRight className="w-4 h-4 text-slate-300 group-hover:text-blue-500 dark:group-hover:text-purple-400 transition-colors shrink-0" />
+                      <ArrowUpRight className="w-4 h-4 text-slate-300 group-hover:text-purple-400 transition-colors shrink-0" />
                     </motion.a>
                   );
                 })}
               </div>
 
               {/* Divider */}
-              <div className="mt-12 pt-10 border-t border-slate-100 dark:border-slate-800">
-                <p className="text-sm font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-5">
+              <div className="mt-12 pt-10 border-t border-slate-800">
+                <p className="text-sm font-semibold uppercase tracking-wider text-slate-500 mb-5">
                   Find me on
                 </p>
                 <div className="flex gap-3">
@@ -143,7 +143,7 @@ export default function Contact() {
                         transition={{ duration: 0.3, delay: i * 0.08 }}
                         viewport={{ once: true }}
                         aria-label={s.label}
-                        className="w-11 h-11 rounded-lg border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:border-blue-500 dark:hover:border-purple-500 hover:text-blue-600 dark:hover:text-purple-400 transition-all duration-200"
+                        className="w-11 h-11 rounded-lg border border-slate-700 flex items-center justify-center text-slate-400 hover:border-purple-500 hover:text-purple-400 transition-all duration-200"
                       >
                         <Icon className="w-4 h-4" />
                       </motion.a>
@@ -162,17 +162,17 @@ export default function Contact() {
               className="space-y-6"
             >
               {/* Availability Status */}
-              <div className="p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+              <div className="p-6 rounded-xl bg-slate-800 border border-slate-700">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="relative flex h-3 w-3">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                   </span>
-                  <span className="text-sm font-semibold text-green-600 dark:text-green-400">
+                  <span className="text-sm font-semibold text-green-400">
                     Available for new projects
                   </span>
                 </div>
-                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                <p className="text-slate-400 text-sm leading-relaxed">
                   I'm currently open to freelance work, full-time roles, and
                   consulting engagements. If you have a project that needs
                   expertise in full-stack architecture —
@@ -181,8 +181,8 @@ export default function Contact() {
               </div>
 
               {/* What I Can Help With */}
-              <div className="p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
-                <h3 className="font-bold text-slate-900 dark:text-slate-100 mb-5">
+              <div className="p-6 rounded-xl bg-slate-800 border border-slate-700">
+                <h3 className="font-bold text-slate-100 mb-5">
                   What I can help with
                 </h3>
                 <ul className="space-y-3">
@@ -195,9 +195,9 @@ export default function Contact() {
                   ].map((item, i) => (
                     <li
                       key={i}
-                      className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-400"
+                      className="flex items-start gap-3 text-sm text-slate-400"
                     >
-                      <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-blue-500 dark:bg-purple-400 shrink-0" />
+                      <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-purple-400 shrink-0" />
                       {item}
                     </li>
                   ))}
